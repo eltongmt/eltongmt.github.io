@@ -94,22 +94,25 @@
 		<h2 id="Work" style="padding-top: 100px; padding-bottom:30px; margin-top: -80px; text-align: center;">
 			Selected Works 
 		</h2>
-
-      <div class="row">
-          <div class="col-md-3">
-            <div class="video-container text-center" style="overflow: hidden;">
-              <img class="img-fluid img-rounded ustify-content-center" src="media/multi_lib.png" style="align-items: center; max-height: 200px; object-fit: cover; margin-top: 0pt; border:0px solid black" alt="" >
-            </div>
-          </div>
-              <div class="col-md-9">
-                <p class="title-text">Software Development for Timeseries Analysis<br></p>
-                  <ul class="description-text"> 
-                    <li>Wrote code to visualize, manipulate, and analyize behavioral timeseries data in matlab</li>
-                    <li>Efficient use of DRY, modularity, and Testing  software principles</li>
-                    <li>Usage of Deep Learning, Image Processing, Computer Vision, Signal Processing, and Machine Learning Toolbox</li>
-                  </ul>
-              </div><hr>
-        </div><hr>
+      
+    <div class="row">
+        <div class="col-md-3">
+					<div class="video-container" style="overflow: hidden;">
+						<video class="img_responsive" style="border: 0px solid black; margin-top: 0pt; width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+							<source src="media/coppeliaSim_scene.mov" type="video/mp4">
+						</video>
+					</div>
+				</div>
+				  <div class="col-md-9">
+				  <p class="title-text">Wheeled Robot Pick Up Task Simulation<br></p>
+            <ul class="description-text"> 
+              <li>Developed code to generate an end-effector screw trajectory based on the cube’s initial and final positions.</li>
+              <li>Implemented a kinematic task-space PI control law to compute the twist corresponding to the planned trajectory.</li>
+              <li>Calculated target wheel and joint speeds using the base and arm Jacobians, applying a weighted least-squares approach.</li>
+              <li>Tuned PI controller gains (kp​ and ki) to minimize error, overshoot, and oscillations for optimal performance.</li>
+            </ul>
+			    </div><hr>
+      </div><hr> 
 
 
       <div class="row">
@@ -121,34 +124,14 @@
 					</div>
 				</div>
 				  <div class="col-md-9">
-				  <p class="title-text">NAO object tracking <br></p>
+				  <p class="title-text">Tracking and Following Objects with NAO robot<br></p>
             <ul class="description-text"> 
-              <li>Wrote code repo to interact with Softbank Robotics' NAO</li>
-              <li>Built on top of the provided SDK to work with modern python packages such as numpy and cv2</li>
-              <li>Able to access camera feed, control actuators</li>
-              <li>Example shows NAO tracking an object using a custom YOLO model</li>
+              <li>Used Softbank Robotics' NAO SDK along with NumPy and openCV to retrive images, detect objects, and commad head angles to follow the detected object.</li>
+              <li>Images were retrived from NAO using a wired connection and Object Detection was based on a custom trained YOLO model run off-device .</li>
             </ul>
 			    </div><hr>
-      </div><hr>      
+      </div><hr>
 
-
-      <div class="row">
-        <div class="col-md-3">
-          <div class="video-container text-center" style="overflow: hidden;">
-            <img class="img-fluid img-rounded ustify-content-center" src="media/attended_objects_mdscale.png" style="align-items: center; max-height: 200px; object-fit: cover; margin-top: 0pt; border:0px solid black" alt="" >
-          </div>
-        </div>
-            <div class="col-md-9">
-              <p class="title-text">Object Clustering from Ego-Centric View</p>
-              <ul class="description-text"> 
-                <li>Fined-tuned YOLO using a custom dataset from ego-centric view</li>
-                <li>Extracted the detected objects and embeded them using resnet</li>
-                <li>Reduced embedding to 2D using multi dimensional scaling</li>
-                <li>Compared unsupervised clusters to grounth truth clusters</li>
-              </ul>
-            </div><hr>
-        </div><hr>
-      
 
       <div class="row">
         <div class="col-md-3">
@@ -161,13 +144,48 @@
 				<div class="col-md-9">
 				<p class="title-text">Rapidly Expanding Random Tree for Path Planning <br></p>
                 <ul class="description-text"> 
-                    <li>Implemented RRT from scratch using numpy</li>
-                    <li>The program takes in a list of obstacles, start, and end coordinates and outputs a feasible path</li>
-                    <li>Uses colision checking, graph datastructure, and module testing</li>
-                    <li>Used to simualte the path of a kilobot in CoppeliaSim</li>
+                    <li>Wrote to code to use RRT to find a path from a list of obstacles (circles), a starting position, and a goal location.</li>
+                    <li>The code consists of a custom implementation of the RRT algorithm using a graph class and NumpPy.</li>
+                    <li>Each functionality of the algorith such as random sampling was tested using unittest.</li>
                 </ul>
 			  </div><hr>
       </div><hr>
+
+
+      <div class="row">
+          <div class="col-md-3">
+            <div class="video-container text-center" style="overflow: hidden;">
+              <img class="img-fluid img-rounded ustify-content-center" src="media/multi_lib.png" style="align-items: center; max-height: 200px; object-fit: cover; margin-top: 0pt; border:0px solid black" alt="" >
+            </div>
+          </div>
+              <div class="col-md-9">
+                <p class="title-text">Software Development for Timeseries Analysis<br></p>
+                  <ul class="description-text"> 
+                    <li>Wrote code to visualize, manipulate, and analyize behavioral timeseries data in MATLAB.</li>
+                    <li>Code was throughly documented and was organized around existing functionality.</li>
+                    <li>Usage of Deep Learning, Image Processing, Computer Vision, Signal Processing, and Machine Learning Toolbox.</li>
+                  </ul>
+              </div><hr>
+        </div><hr>
+
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="video-container text-center" style="overflow: hidden;">
+            <img class="img-fluid img-rounded ustify-content-center" src="media/attended_objects_mdscale.png" style="align-items: center; max-height: 200px; object-fit: cover; margin-top: 0pt; border:0px solid black" alt="" >
+          </div>
+        </div>
+            <div class="col-md-9">
+              <p class="title-text">Object Clustering from Ego-Centric View</p>
+              <ul class="description-text"> 
+                <li>Visualized clusters of 27 objects from Ego-Centric view across 20+ experiment particpants.</li>
+                <li>Object images where extracted using a custom YOLO model, which was applied to extracted frames of the participant's Ego-Centric video.</li>
+                <li>Resnet was used embbed the object images, multi dimensional scaling was used to reduce the embedding to two dimensions .</li>
+                <li>Created unsurpervised clustered using K-means and compared the clustering results to grounth truth clusters.</li>
+              </ul>
+            </div><hr>
+        </div><hr>
+      
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
